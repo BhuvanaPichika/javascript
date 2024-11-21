@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <script>
+        function calculatebmi(){
+            var wei = document.getElementById("weightid").value;
+            var hei = document.getElementById("heightid").value;
+            var sqrtt = hei * hei;
+            var bmi = wei / sqrtt;
+            var result = "";
+
+            if(bmi < 15){
+                result = "Very Severely Underweight";
+            } else if(bmi >= 15 && bmi < 16){
+                result = "Severely Underweight";
+            } else if(bmi >= 16 && bmi < 18.5){
+                result = "Underweight";
+            } else if(bmi >= 18.5 && bmi < 25){
+                result = "Normal (Healthy Weight)";
+            } else if(bmi >= 25 && bmi < 30){
+                result = "Overweight";
+            } else if(bmi >= 30 && bmi < 35){
+                result = "Moderately Obese";
+            } else if(bmi >= 35 && bmi < 40){
+                result = "Severely Obese";
+            } else {
+                result = "Very Severely Obese";
+            }
+
+            document.getElementById("result").innerHTML = "Your BMI is: " + bmi.toFixed(2) + " - " + result;
+        }
+    </script>
+    <link rel="stylesheet" href="bmics.css">
+</head>
+<center>
+<body>
+    <div class="wrapper">
+        <div class="image-section"></div>
+        <div class="container">
+            <p>BMI Calculator</p><br>
+            Weight: <input type="text" id="weightid" placeholder="Weight in Kg"><br><br><br>
+            Height: <input type="text" id="heightid" placeholder="Height in meters"><br><br>
+            <button type="submit" onclick="calculatebmi()">Calculate</button>
+            <p id="result"></p>
+        </div>
+    </div>
+    
+</body>
+</center>
+</html>

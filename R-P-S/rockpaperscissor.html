@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <script src="rps.js"></script>   
+    <link rel="stylesheet" href="rps.css">
+</head>
+<body>
+    <h1 id="input">Select your Choice to Start the Game</h1><br><br><br>
+    <div class="container">
+        <div class="player">
+        
+            <b>You</b><br><br><span id="pc"></span>
+            <!-- Display the player's score -->
+            <p id="player_score">Player Score: 0</p>
+    
+        </div>&nbsp;&nbsp;&nbsp;
+        
+        
+        <div class="computer">
+            <!-- Display the computer's choice -->
+            <b>Computer</b><br><br><span id="cc"></span>
+            
+            <!-- Display the computer's score -->
+            <p id="computer_score">Computer Score: 0</p>
+        </div>
+    
+
+    </div>
+    <!-- Buttons for player to select rock, paper, or scissors -->
+    <span id="btn">
+        <button onclick="roll('✊')">✊<br><br>ROCK</button>
+        <button onclick="roll('✋')">✋<br><br>PAPER</button>
+        <button onclick="roll('✌')">✌<br><br>SCISSOR</button>
+    
+    </span>
+    
+    <!-- Button to reset the game -->
+    <input type="button" onclick="reset()" value="RESET">
+</body>
+</html>

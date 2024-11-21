@@ -1,0 +1,96 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5e673;
+    margin: 0;
+    padding: 0;
+    background: url("https://png.pngtree.com/thumb_back/fh260/background/20200707/pngtree-gaming-golden-border-background-image_350801.jpg") no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-top: 90px;
+    color:white;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px auto;
+    width: 750px;
+    margin-top: 5px;
+
+}
+
+
+.player, .computer {
+    background-color: #1e1d03;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.player b, .computer b {
+    font-size: 20px;
+    color: #007bff;
+}
+
+
+#pc, #cc {
+    font-size: 40px;
+    margin: 10px 0;
+    display: block;
+}
+
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-left: 15px;
+    background-color: #86b74a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+#player_score, #computer_score {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #fcf6f6;
+}
+
+
+input[type="button"] {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 120px;
+    background-color: #e02d2d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 180px;
+}
+
+input[type="button"]:hover {
+    background-color: #f22005;
+}
+
+

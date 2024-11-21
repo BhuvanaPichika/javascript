@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* h1{
+  background-color: #F8F8F8;
+  margin-top: -450px;
+  margin-left: 40px;
+} */
+body{
+  background: url("data:image/jpeg;base64,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") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background: #92c7e8; */
+  
+}
+.wrapper{
+  padding: 25px;
+  border-radius: 10px;
+  background: #F8F8F8;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.cards, .card, .view{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards{
+  height: 400px;
+  width: 400px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cards .card{
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  height: calc(100% / 4 - 10px);
+  width: calc(100% / 4 - 10px);
+}
+.card.shake{
+  animation: shake 0.35s ease-in-out;
+}
+@keyframes shake {
+  0%, 100%{
+    transform: translateX(0);
+  }
+  20%{
+    transform: translateX(-13px);
+  }
+  40%{
+    transform: translateX(13px);
+  }
+  60%{
+    transform: translateX(-8px);
+  }
+  80%{
+    transform: translateX(8px);
+  }
+}
+.card .view{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 7px;
+  background: #fff;
+  pointer-events: none;
+  backface-visibility: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.25s linear;
+}
+.card .front-view img{
+  width: 75px;
+}
+.card .back-view img{
+  max-width: 75px;
+}
+.card .back-view{
+  transform: rotateY(-180deg);
+}
+.card.flip .back-view{
+  transform: rotateY(0);
+}
+.card.flip .front-view{
+  transform: rotateY(180deg);
+}
+@media screen and (max-width: 700px) {
+  .cards{
+    height: 350px;
+    width: 350px;
+  }
+  .card .front-view img{
+    width: 17px;
+  }
+  .card .back-view img{
+    max-width: 40px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .cards{
+    height: 300px;
+    width: 300px;
+  }
+  .card .front-view img{
+    width: 15px;
+  }
+  .card .back-view img{
+    max-width: 35px;
+  }
+}
